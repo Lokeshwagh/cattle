@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Product Page </title>
+</head>
+<style>
+    body{
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+#header{
+  width: 100%;
+  height: 30%;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(to left,red,#4158D0,#C850C0);
+  
+}
+#container{
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+}
+#logo{
+  width: 110px;
+  opacity: 1;
+  margin-left: 55px;
+  overflow-wrap: break-word;
+}
+nav{
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+  width: 100vw;
+  font-family: 'Roboto Slab', serif;
+    font-family: 'Single Day', cursive;
+  
+}
+ul li{
+  list-style: none;
+  text-decoration: none;
+  display: inline-flex;
+  margin: 10px 20px;
+  justify-content: space-between;  
+  animation: slideTop 1s ease forwards ; 
+ animation-delay: 0.5s;
+}
+ul li a{
+  font-weight: 900;
+  text-decoration: none;
+  color:#fefefe;
+  font-size: 20px;
+ position: relative;
+ transition: all 0.1s ease-in-out;
+}
+ul li a:hover{
+  color: #00ffe1;
+  transform: translate(0px ,-3px);
+  text-decoration: none;
+}
+/* end or nave bar */
+#Product h1{
+    font-size: 20px;
+    
+}
+.pro{
+    
+    width: 300px;
+    border: 2px solid rgb(212, 0, 245);
+    border-radius: 20px;
+    padding: 30px 10px;
+}
+.outer-Wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin: 100px 150px;   
+}
+.pro button{
+  background-color: black;
+  color: rgb(216, 208, 194);
+  font-size: 24px;
+  width: 200px;
+  border: 2px solid violet;
+  border-radius: 32px;
+  border: 5px solid #b36c01;
+}
+.pro img{
+        border-radius: 8px;
+}
+.pro:hover{
+    box-shadow: 0 0 2px cyan,
+    0 0 6px cyan,0 0 60px cyan;
+}
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #b0b000;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+
+}
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+.glow-on-hover:active:after {
+    background: transparent;
+    
+}
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0c364c;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.Tex{
+  
+  background: -webkit-linear-gradient(#ff8b8b, #75beff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+</style>
+<body bgcolor="black" style="color: #fefefe;" >
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="c-removebg-preview.png" alt="not load" id="logo">
+                <i class='bx bx-menu-alt-right' id="menu"></i>
+                <ul >
+                    <li><a class="active" href="index.html #Home">Home</a></li>
+                    <li><a href="index.html #about">About</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="index.html #feedbackus">Business</a></li>
+                    <li><a href=""> Login <i class="fas fa-sign-in-alt"></i></a></li>
+                </ul>
+              </nav>
+          </div>
+        </div>
+    </div>
+    <section id="Product">
+        <center>
+            <h1  class="Tex" style="font-size: 36px;" ><u style="color: #00ffd5;"> Products</u></h1>
+        </center>
+   <div class="outer-Wrapper">
+              <div class="pro 1">
+                <center><img src="cat2.jpg" alt="Denim Jeans" style="width:80%">
+                
+                <h1 >Tailored Leans</h1>
+                <p class="Loc">Bengluru/Karnataka</p>
+                <p class="price">$19.99</p>
+                <p>This is the some Cows information in which WE Cow is stable</p>
+                <p><a href=""><button>Bay Now</button></a></p></center>
+              </div>
+              <div class="pro 2">
+                <center><img src="cat2.jpg" alt="Denim Jeans" style="width:80%">
+                
+                    <h1 >Tailored Leans</h1>
+                    <p class="Loc">Bengluru/Karnataka</p>
+                    <p class="price">$19.99</p>
+                    <p>This is the some Cows information in which WE Cow is stable</p>
+                    <p><a href=""><button>Bay Now </button></a></p></center>
+              </div>
+              <div class="pro 3">
+                <center><img src="cat2.jpg" alt="Denim Jeans" style="width:80%">
+                
+                    <h1 >Tailored Leans</h1>
+                    <p class="Loc">Bengluru/Karnataka</p>
+                    <p class="price">$19.99</p>
+                    <p>This is the some Cows information in which WE Cow is stable</p>
+                    <p><a href=""><button>Bay Now </button></a></p></center>
+              </div>
+              <div class="pro 4">
+                <center><img src="cat2.jpg" alt="Denim Jeans" style="width:80%">
+                
+                    <h1 >Tailored Leans</h1>
+                    <p class="Loc">Bengluru/Karnataka</p>
+                    <p class="price">$19.99</p>
+                    <p>This is the some Cows information in which WE Cow is stable</p>
+                    <p><a href=""><button>Bay Now </button></a></p></center>
+              </div>
+              <div class="pro 5">
+                <center><img src="cat2.jpg" alt="Denim Jeans" style="width:80%">
+                
+                    <h1 >Tailored Leans</h1>
+                    <p class="Loc">Bengluru/Karnataka</p>
+                    <p class="price">$19.99</p>
+                    <p>This is the some Cows information in which WE Cow is stable</p>
+                    <p><a href=""><button>Bay Now </button></a></p></center>
+              </div>
+              <div class="pro 6">
+                <center><img src="cat2.jpg" alt="Denim Jeans" style="width:80%">
+                
+                    <h1 >Tailored Leans</h1>
+                    <p class="Loc">Bengluru/Karnataka</p>
+                    <p class="price">$19.99</p>
+                    <p>This is the some Cows information in which WE Cow is stable</p>
+                    <p><a href=""><button>Bay Now </button></a></p></center>
+              </div>
+              <div class="pro 7">
+                <center><img src="cat2.jpg" alt="Denim Jeans" style="width:80%">
+                
+                    <h1 >Tailored Leans</h1>
+                    <p class="Loc">Bengluru/Karnataka</p>
+                    <p class="price">$19.99</p>
+                    <p>This is the some Cows information in which WE Cow is stable</p>
+                    <p><a href=""><button>Bay Now </button></a></p></center>
+              </div>
+              <div class="pro 8">
+                <center><img src="cat2.jpg" alt="Denim Jeans" style="width:80%">
+                
+                    <h1 >Tailored Leans</h1>
+                    <p class="Loc">Bengluru/Karnataka</p>
+                    <p class="price">$19.99</p>
+                    <p>This is the some Cows information in which WE Cow is stable</p>
+                    <p><a href=""><button>Bay Now </button></a></p></center>
+              </div>
+               
+
+   </div>
+   <center><a href="#">  <button class="glow-on-hover" onclick="myfun()"  style="font-size: 20px;" type="button">Explore More</button></a></center>
+   <center><p id="demo" style="font-size: 20px;"></p></center>
+    </section>
+    <script>
+      
+        function myfun(){
+            alert("Sorry sir We have only this cows in this Month")
+             document.getElementById("demo").innerHTML="Sorry Sir But We have Only above cows";
+        }
+    </script>
+</body>
+</html>
